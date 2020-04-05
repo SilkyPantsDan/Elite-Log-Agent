@@ -1,6 +1,7 @@
 ﻿namespace EliteLogAgent
 {
-    using System.Deployment.Application;
+    // TODO: How does this mirrorr to Core?
+    //using System.Deployment.Application;
     using Castle.Facilities.Logging;
     using Castle.MicroKernel.Registration;
     using Castle.Services.Logging.NLogIntegration;
@@ -35,9 +36,10 @@
             container.Register(Component.For<IUserNotificationInterface>().ImplementedBy<TrayIconController>().LifestyleSingleton());
 
             // Different components will be used based on whether apps are portable
-            if (ApplicationDeployment.IsNetworkDeployed)
-                container.Register(Component.For<IAutorunManager>().ImplementedBy<ClickOnceAutorunManager>().LifestyleTransient());
-            else
+            // TODO: How does this mirrorr to Core?
+            //if (ApplicationDeployment.IsNetworkDeployed)
+            //    container.Register(Component.For<IAutorunManager>().ImplementedBy<ClickOnceAutorunManager>().LifestyleTransient());
+            //else
                 container.Register(Component.For<IAutorunManager>().ImplementedBy<PortableAutorunManager>().LifestyleTransient());
         }
     }
