@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{14C53350-191B-4367-BEC4-7B749E7B1EEB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <UseWindowsForms>true</UseWindowsForms>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DW.ELA.Controller</RootNamespace>
     <AssemblyName>DW.ELA.Controller</AssemblyName>
@@ -42,26 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DW.ELA.Utility\DW.ELA.Utility.csproj">
-      <Project>{93dcdb11-335d-400c-bd87-554a0c1e2cee}</Project>
-      <Name>DW.ELA.Utility</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\DW.ELA.Interfaces.csproj">
-      <Project>{fd518ed2-7a6e-42f7-8c90-603235c1fee6}</Project>
-      <Name>DW.ELA.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="morelinq">
-      <Version>3.2.0</Version>
+    <PackageReference Include="morelinq" Version="3.2.0">
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.2</Version>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2">
     </PackageReference>
-    <PackageReference Include="NLog">
-      <Version>4.6.7</Version>
+    <PackageReference Include="NLog" Version="4.6.7">
     </PackageReference>
-    <PackageReference Include="System.ValueTuple">
-      <Version>4.5.0</Version>
+    <PackageReference Include="System.ValueTuple" Version="4.5.0">
     </PackageReference>
   </ItemGroup>
 </Project>

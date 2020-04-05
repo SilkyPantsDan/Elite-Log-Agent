@@ -3,7 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49BDB0D0-0C0A-4E83-AF13-A92DC6D2D608}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>EliteLogAgent</RootNamespace>
@@ -34,28 +33,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Controller\DW.ELA.Controller.csproj">
-      <Project>{14c53350-191b-4367-bec4-7b749e7b1eeb}</Project>
-      <Name>DW.ELA.Controller</Name>
     </ProjectReference>
     <ProjectReference Include="..\DW.ELA.Plugin.EDDN\DW.ELA.Plugin.EDDN.csproj">
-      <Project>{a9e8be2a-1256-4933-ac2c-c2ce7ab26900}</Project>
-      <Name>DW.ELA.Plugin.EDDN</Name>
     </ProjectReference>
     <ProjectReference Include="..\DW.ELA.Utility\DW.ELA.Utility.csproj">
-      <Project>{93dcdb11-335d-400c-bd87-554a0c1e2cee}</Project>
-      <Name>DW.ELA.Utility</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\DW.ELA.Interfaces.csproj">
-      <Project>{fd518ed2-7a6e-42f7-8c90-603235c1fee6}</Project>
-      <Name>DW.ELA.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\Plugin.EDSM\DW.ELA.Plugin.EDSM.csproj">
-      <Project>{cf1a7347-ad57-49b2-ba8e-7390b195a4e8}</Project>
-      <Name>DW.ELA.Plugin.EDSM</Name>
     </ProjectReference>
     <ProjectReference Include="..\Plugin.Inara\DW.ELA.Plugin.Inara.csproj">
-      <Project>{6f64b299-6a1d-4f4a-9bd6-911634a9f02f}</Project>
-      <Name>DW.ELA.Plugin.Inara</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -65,17 +52,13 @@
     <None Include="Resources\github.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Castle.Core-NLog">
-      <Version>4.4.0</Version>
+    <PackageReference Include="Castle.Core-NLog" Version="4.4.0">
     </PackageReference>
-    <PackageReference Include="Castle.LoggingFacility">
-      <Version>5.0.1</Version>
+    <PackageReference Include="Castle.LoggingFacility" Version="5.0.1">
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.2</Version>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2">
     </PackageReference>
-    <PackageReference Include="NLog">
-      <Version>4.6.7</Version>
+    <PackageReference Include="NLog" Version="4.6.7">
     </PackageReference>
   </ItemGroup>
 </Project>

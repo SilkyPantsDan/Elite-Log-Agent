@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93DCDB11-335D-400C-BD87-554A0C1E2CEE}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <UseWindowsForms>true</UseWindowsForms>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DW.ELA.Utility</RootNamespace>
     <AssemblyName>DW.ELA.Utility</AssemblyName>
@@ -54,16 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Interfaces\DW.ELA.Interfaces.csproj">
-      <Project>{FD518ED2-7A6E-42F7-8C90-603235C1FEE6}</Project>
-      <Name>DW.ELA.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.2</Version>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2">
     </PackageReference>
-    <PackageReference Include="NLog">
-      <Version>4.6.7</Version>
+    <PackageReference Include="NLog" Version="4.6.7">
     </PackageReference>
   </ItemGroup>
 </Project>
